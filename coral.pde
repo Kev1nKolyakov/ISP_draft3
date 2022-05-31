@@ -8,6 +8,8 @@ float turtleX=1000;//stores the x value of the turtle
 float turtleY=400;//stores the y value of the turtle
 float turtleC=2;//stores the movement amount of the turtle
 boolean info;//stores ifo button was clicked
+int bubbleY=600;
+int bubbleC=2;
 
 void coral() {
   backgroundCoral();
@@ -41,7 +43,7 @@ void coral() {
   clown();
   popMatrix();
 
-  
+
 
   clownX+=4;
   if (clownX==900) {
@@ -97,19 +99,17 @@ void backgroundCoral() {
   line(720, 400, 720, 380);
   line(750, 450, 600, 450);
 
-  int bubbleY=500;
-  int bubbleC=1;
+
   //bubbles
-  bubbleC+=bubbleC;
+  bubbleY-=bubbleC;
   stroke(255);
   strokeWeight(3);
   ellipse(400, bubbleY+10, 40, 40);
   fill(255);
   ellipse(405, bubbleY, 10, 10);
 
-  int randIn=int(random(0, 600));
-  if (randIn==20) {
-    bubbleC=1;
+  if (bubbleY==250) {
+    bubbleY=600;
   }
 
   //geiser
@@ -117,7 +117,7 @@ void backgroundCoral() {
   fill(77, 55, 52);
   ellipse(400, 500, 100, 50);
   fill(44, 181, 219);
-  arc(400, 470, 20, 20, 0, PI);
+  arc(400, 475, 20, 20, 0, PI);
 }
 
 //clownfish
