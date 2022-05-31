@@ -41,7 +41,7 @@ void coral() {
   clown();
   popMatrix();
 
-  info();
+  
 
   clownX+=4;
   if (clownX==900) {
@@ -57,6 +57,7 @@ void coral() {
   if (eelX==70) {//if the eel reaches its original position, the eel goes back up
     eelC=+1;
   }
+  info();
 }
 
 void backgroundCoral() {
@@ -117,36 +118,6 @@ void backgroundCoral() {
   ellipse(400, 500, 100, 50);
   fill(44, 181, 219);
   arc(400, 470, 20, 20, 0, PI);
-}
-
-void info() {
-
-  stroke(0);
-  strokeWeight(2);
-
-  //shows text if the mouse is clicked inside the circle and it goes away if the button is clicked again
-  if (dist(mouseX, mouseY, 40, 40) <= 25 && mousePressed) {
-    delay(100);
-    if (info) {
-      info = false;
-    } else {
-      info = true;
-    }
-  } 
-  if (info) {
-    fill(255);
-    rect(100, 50, 600, 400);
-  }
-
-  fill(46, 90, 201);
-
-  // Change colour of circle depending on collision
-  if (dist(mouseX, mouseY, 40, 40) <= 25) {
-    fill(3, 46, 153);
-  }
-  ellipse(40, 40, 50, 50);
-  fill(255);
-  text("i", 40, 40);
 }
 
 //clownfish

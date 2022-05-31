@@ -25,6 +25,7 @@ void coniferous() {
     rabbitY=300;
     wolfX=-400;//teleports the wolf to the left side of the screen
   }
+  info();
 }
 
 void background() {

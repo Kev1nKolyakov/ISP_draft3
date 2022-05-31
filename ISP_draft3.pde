@@ -8,7 +8,51 @@ boolean isInside6 = false;
 boolean isInside7 = false;
 boolean isInside8 = false;
 
-
+void info() {
+  stroke(0);
+  strokeWeight(2);
+  //shows text if the mouse is clicked inside the circle and it goes away if the button is clicked again
+  if (dist(mouseX, mouseY, 40, 40) <= 25 && mousePressed) {
+    delay(100);
+    if (info) {
+      info = false;
+    } else {
+      info = true;
+    }
+  } 
+  if (info) {
+    fill(255);
+    rect(100, 50, 600, 400);
+    textAlign(LEFT);
+    fill(0);
+    if (isInside1) {
+      text("woww its a tropical forest", 200, 200);
+    } else if (isInside2) {
+      text("woww its a savannah", 200, 200);
+    } else if (isInside3) {
+      text("woww its a coniferous forest", 200, 200);
+    } else if (isInside4) {
+      text("woww its a desert", 200, 200);
+    } else if (isInside5) {
+      text("woww its a deciduous forest", 200, 200);
+    } else if (isInside6) {
+      text("woww its a coral reef", 200, 200);
+    } else if (isInside7) {
+      text("woww its a prairie", 200, 200);
+    } else if (isInside8) {
+      text("woww its a deep sea", 200, 200);
+    }
+    textAlign(CENTER, CENTER);
+  }
+  fill(46, 90, 201);
+  // Change colour of circle depending on collision
+  if (dist(mouseX, mouseY, 40, 40) <= 25) {
+    fill(3, 46, 153);
+  }
+  ellipse(40, 40, 50, 50);
+  fill(255);
+  text("i", 40, 40);
+}
 
 void savannah() {
   background(213, 230, 224);

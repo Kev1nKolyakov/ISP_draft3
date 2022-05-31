@@ -27,6 +27,7 @@ void deepSea() {
       }
     }
   }
+  info();
   noStroke();
 }
 

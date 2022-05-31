@@ -627,4 +627,5 @@ void tropForest() {
   } else {
     panther();
   }
+  info();
 }

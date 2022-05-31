@@ -110,4 +110,5 @@ void deciduous() {
     rat();
   }
   owl();
+  info();
 }
