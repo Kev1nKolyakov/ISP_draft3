@@ -58,9 +58,7 @@ void savannah() {
   background(213, 230, 224);
 }
 
-void desert() {
-  background(242, 209, 160);
-}
+
 
 void prairie() {
   background(227, 194, 152);
