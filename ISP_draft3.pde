@@ -62,9 +62,7 @@ void desert() {
   background(242, 209, 160);
 }
 
-void prairie() {
-  background(227, 194, 152);
-}
+
 
 void menu() {
   PFont big = loadFont("Cambria-Bold-48.vlw");//for big font
