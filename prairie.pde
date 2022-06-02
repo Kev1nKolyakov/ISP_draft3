@@ -24,6 +24,7 @@ void prairie() {
   if (coyoteX==550) {
     coyoteClose=false;
   }
+  info();
 }
 
 void prairieBackground() {
