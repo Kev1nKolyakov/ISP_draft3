@@ -18,7 +18,7 @@ void prairie() {
   if (coyoteClose && prairieY!=350) {
     prairieY+=4;
   }
-  if (coyoteClose==false && prairieY!=230) {
+  if (coyoteClose==false && prairieY!=230) {  
     prairieY-=4;
   }
   if (coyoteX==550) {
@@ -127,7 +127,6 @@ void prairieDog() {
   line(prairieX+473, prairieY+103, prairieX+473, prairieY+108);
   line(prairieX+470, prairieY+108, prairieX+476, prairieY+108);
   noStroke();
-  //grass
   fill(#316F35);
   rect(0, 450, 800, 50);
   //mound
