@@ -12,13 +12,62 @@ void desert() {
 void desertBackground() {
   background(242, 209, 160);
 
+  //cactus #1
+  pushMatrix();
+  translate(-300, 20);
   //cactus
   fill(23, 153, 68);
   ellipse(400, 250, 40, 100);
+  //cactus arms
   rect(350, 220, 40, 15, 25);
-  rect(350, 220, 15, 40, 25);  
+  rect(350, 220, 15, 40, 25); 
+  rect(410, 220, 40, 15, 25);
+  rect(435, 190, 15, 40, 25); 
+  //cactus flower
+  fill(237, 52, 160);
+  ellipse(400, 200, 20, 20);
+  //sand under cactus
   fill(242, 209, 160);
   rect(375, 280, 50, 50);
+  popMatrix();
+
+  //cactus #2
+  pushMatrix();
+  translate(-50, -150);
+  //cactus
+  fill(23, 153, 68);
+  ellipse(400, 250, 40, 100);
+  //cactus arms
+  rect(350, 220, 40, 15, 25);
+  rect(350, 220, 15, 40, 25); 
+  rect(410, 220, 40, 15, 25);
+  rect(435, 190, 15, 40, 25); 
+  //cactus flower
+  fill(237, 52, 160);
+  ellipse(400, 200, 20, 20);
+  //sand under cactus
+  fill(242, 209, 160);
+  rect(375, 280, 50, 50);
+  popMatrix();
+
+  //cactus #3
+  pushMatrix();
+  translate(150, 150);
+  //cactus
+  fill(23, 153, 68);
+  ellipse(400, 250, 40, 100);
+  //cactus arms
+  rect(350, 220, 40, 15, 25);
+  rect(350, 220, 15, 40, 25); 
+  rect(410, 220, 40, 15, 25);
+  rect(435, 190, 15, 40, 25); 
+  //cactus flower
+  fill(237, 52, 160);
+  ellipse(400, 200, 20, 20);
+  //sand under cactus
+  fill(242, 209, 160);
+  rect(375, 280, 50, 50);
+  popMatrix();
 }
 
 void camel() {
