@@ -11,7 +11,7 @@ void camel() {
   //hump
   fill(219, 166, 105);
   ellipse(camelX, camelY-30, 60, 60);
-  //tail
+  //tails
   stroke(232, 169, 97);
   strokeWeight(5);
   noFill();

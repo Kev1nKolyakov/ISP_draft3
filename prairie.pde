@@ -9,24 +9,24 @@ void prairie() {
   coyote();
   prairieDog();
   coyoteX+=5;
-  if(coyoteX==1200){
+  if (coyoteX==1200) {
     coyoteX=-300;
   }
-  if(coyoteX==100){
+  if (coyoteX==100) {
     coyoteClose=true;
   }
-  if(coyoteClose && prairieY!=350){
+  if (coyoteClose && prairieY!=350) {
     prairieY+=4;
   }
-  if(coyoteClose==false && prairieY!=230){
+  if (coyoteClose==false && prairieY!=230) {
     prairieY-=4;
   }
-  if(coyoteX==550){
+  if (coyoteX==550) {
     coyoteClose=false;
   }
 }
 
-void desBackground(){
+void desBackground() {
   background(196, 255, 252);
 }
 
@@ -128,5 +128,5 @@ void prairieDog() {
   noStroke();
   //mound
   fill(#6C543C);
-  arc(prairieX+500,480,200,100,PI+(QUARTER_PI/4),TWO_PI-(QUARTER_PI/4),OPEN);
+  arc(prairieX+500, 480, 200, 100, PI+(QUARTER_PI/4), TWO_PI-(QUARTER_PI/4), OPEN);
 }
