@@ -5,7 +5,7 @@ int prairieY=230;
 Boolean coyoteClose=false;
 
 void prairie() {
-  desBackground();
+  prairieBackground();
   coyote();
   prairieDog();
   coyoteX+=5;
@@ -24,10 +24,11 @@ void prairie() {
   if (coyoteX==550) {
     coyoteClose=false;
   }
+  info();
 }
 
-void desBackground() {
-  background(196, 255, 252);
+void prairieBackground() {
+  background(#9DCFD8);
 }
 
 void coyote() {
@@ -126,6 +127,8 @@ void prairieDog() {
   line(prairieX+473, prairieY+103, prairieX+473, prairieY+108);
   line(prairieX+470, prairieY+108, prairieX+476, prairieY+108);
   noStroke();
+  fill(#316F35);
+  rect(0, 450, 800, 50);
   //mound
   fill(#6C543C);
   arc(prairieX+500, 480, 200, 100, PI+(QUARTER_PI/4), TWO_PI-(QUARTER_PI/4), OPEN);
