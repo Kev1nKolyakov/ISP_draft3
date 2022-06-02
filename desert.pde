@@ -1,9 +1,24 @@
-int camelX=400;//stores the x value of the anglerfish
-int camelY=250;//stores the y value of the fishes
+int camelX=900;//stores the x value of the anglerfish
+int camelY=100;//stores the y value of the fishes
 
 void desert() {
-  background(242, 209, 160);
+  desertBackground();
   camel();
+  camelX-=2;
+  if (camelX==-100)
+    camelX=900;
+}
+
+void desertBackground() {
+  background(242, 209, 160);
+
+  //cactus
+  fill(23, 153, 68);
+  ellipse(400, 250, 40, 100);
+  rect(350, 220, 40, 15, 25);
+  rect(350, 220, 15, 40, 25);  
+  fill(242, 209, 160);
+  rect(375, 280, 50, 50);
 }
 
 void camel() {
