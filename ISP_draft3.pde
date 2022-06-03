@@ -9,6 +9,8 @@ boolean isInside7 = false;
 boolean isInside8 = false;
 
 void info() {
+  PFont big = loadFont("Cambria-Bold-48.vlw");//for big font
+  PFont small = loadFont("Cambria-Bold-28.vlw");//for small font
   stroke(0);
   strokeWeight(2);
   //shows text if the mouse is clicked inside the circle and it goes away if the button is clicked again
@@ -26,21 +28,53 @@ void info() {
     textAlign(LEFT);
     fill(0);
     if (isInside1) {
-      text("woww its a tropical forest", 200, 200);
+      textFont(big);
+      text("Tropical Forest", 150, 120);
+      textFont(small);
+      text("Animals: \n - Black Panther \n - Snake \n - Hummingbird", 155, 170);
+      text("Temperature Range: \n 20° to 25°C", 390, 170);
     } else if (isInside2) {
-      text("woww its a savannah", 200, 200);
+      textFont(big);
+      text("Savannah", 150, 120);
+      textFont(small);
+      text("Animals: \n - Lion \n - Elephant", 155, 170);
+      text("Temperature Range: \n 20° to 30°C", 390, 170);
     } else if (isInside3) {
-      text("woww its a coniferous forest", 200, 200);
+      textFont(big);
+      text("Coniferous Forest", 150, 120);
+      textFont(small);
+      text("Animals: \n - Wolf \n - Rabbit", 155, 170);
+      text("Temperature Range: \n -40° to 20°C", 390, 170);
     } else if (isInside4) {
-      text("woww its a desert", 200, 200);
+      textFont(big);
+      text("Desert", 150, 120);
+      textFont(small);
+      text("Animals: \n - Camel \n - Addax", 155, 170);
+      text("Temperature Range: \n -5° to 40°C", 390, 170);
     } else if (isInside5) {
-      text("woww its a deciduous forest", 200, 200);
-    } else if (isInside6) {
-      text("woww its a coral reef", 200, 200);
+      textFont(big);
+      text("Deciduous Forest", 150, 120);
+      textFont(small);
+      text("Animals: \n - Owl \n - Mouse", 155, 170);
+      text("Temperature Range: \n -30° to 30°C", 390, 170);
+    } else if (isInside6) {  
+      textFont(big);
+      text("Coral Reef", 150, 120);
+      textFont(small);
+      text("Animals: \n - Clownfish \n - Sea Turtle \n - Eel \n - Coral", 155, 170);
+      text("Temperature Range: \n 20° to 40°C", 390, 170);
     } else if (isInside7) {
-      text("woww its a prairie", 200, 200);
+      textFont(big);
+      text("Prairie", 150, 120);
+      textFont(small);
+      text("Animals: \n - Coyote \n - Prairie Dog", 155, 170);
+      text("Temperature Range: \n -20° to 30°C", 390, 170);
     } else if (isInside8) {
-      text("woww its a deep sea", 200, 200);
+      textFont(big);
+      text("Deep Sea", 150, 120);
+      textFont(small);
+      text("Animals: \n - Lanternfish \n - Anglerfish", 155, 170);
+      text("Temperature Range: \n -5° to 5°C", 390, 170);
     }
     textAlign(CENTER, CENTER);
   }

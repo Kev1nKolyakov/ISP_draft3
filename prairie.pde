@@ -1,28 +1,28 @@
-int coyoteX=0;
-int coyoteY=200;
-int prairieX=50;
-int prairieY=230;
-Boolean coyoteClose=false;
+int coyoteX=0;//controls x coordinate of coyote
+int coyoteY=200;//controls y coordinate of coyote
+int prairieX=50;//controls x coordinate of prairie dog
+int prairieY=230;//controls y coordinate of prairie dog
+Boolean coyoteClose=false;//used to detect if the coyote is close to the prairie dog
 
 void prairie() {
   prairieBackground();
   coyote();
   prairieDog();
   coyoteX+=5;
-  if (coyoteX==1200) {
-    coyoteX=-300;
+  if (coyoteX==1200) {//detects if the coyote is far enough off the screen
+    coyoteX=-300;//teleports it back to the other side
   }
-  if (coyoteX==100) {
-    coyoteClose=true;
+  if (coyoteX==100) {//detects if the coyote is close to the prairie dog
+    coyoteClose=true;//changes the boolean value
   }
-  if (coyoteClose && prairieY!=350) {
-    prairieY+=4;
+  if (coyoteClose && prairieY!=350) {//if the coyote is close and the prairie dog hasn't finished hiding
+    prairieY+=4;//prairie dog goes under
   }
-  if (coyoteClose==false && prairieY!=230) {
-    prairieY-=4;
+  if (coyoteClose==false && prairieY!=230) {//if the coyote is not close anymore and the prairie dog isn't fully up
+    prairieY-=4;//prairie dog goes back up
   }
-  if (coyoteX==550) {
-    coyoteClose=false;
+  if (coyoteX==550) {//if the coyote goes past the prairie dog
+    coyoteClose=false;//changes the boolean value
   }
   info();
 }
