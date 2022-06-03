@@ -54,13 +54,6 @@ void info() {
   text("i", 40, 40);
 }
 
-void savannah() {
-  background(213, 230, 224);
-}
-
-
-
-
 
 void menu() {
   PFont big = loadFont("Cambria-Bold-48.vlw");//for big font
