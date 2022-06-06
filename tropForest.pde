@@ -628,4 +628,9 @@ void tropForest() {
     panther();
   }
   info();
+  if (mousePressed && mouseX>=700 && mouseX<=770 && mouseY>=450 && mouseY<=500) {//if click right arrow, move to the right
+    delay(200);
+    isInside1=false;
+    isInside2=true;
+  }
 }

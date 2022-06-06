@@ -10,6 +10,17 @@ void desert() {
   if (camelX==-100)//teleports the camel back
     camelX=900;
   addax();
+  info();
+  if (mousePressed && mouseX>=700 && mouseX<=770 && mouseY>=450 && mouseY<=500) {//if click right arrow, move to the right
+    delay(200);
+    isInside4=false;
+    isInside5=true;
+  }
+  if (mousePressed && mouseX>=30 && mouseX<=100 && mouseY>=450 && mouseY<=500) {
+    delay(200);
+    isInside4=false;
+    isInside3=true;
+  }
 }
 
 void desertBackground() {

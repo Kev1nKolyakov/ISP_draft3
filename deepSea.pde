@@ -29,6 +29,11 @@ void deepSea() {
   }
   info();
   noStroke();
+  if (mousePressed && mouseX>=30 && mouseX<=100 && mouseY>=450 && mouseY<=500) {
+    delay(200);
+    isInside8=false;
+    isInside7=true;
+  }
 }
 
 void anglerFish() {
