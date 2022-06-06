@@ -7,6 +7,8 @@ boolean isInside5 = false;
 boolean isInside6 = false;
 boolean isInside7 = false;
 boolean isInside8 = false;
+int transparency = 0;//stores the transparency of the splash screen
+
 
 void info() {
   PFont big = loadFont("Cambria-Bold-48.vlw");//for big font
@@ -441,8 +443,16 @@ void draw() {
       isInside8=false;
       isInside7=true;
     }
-  } else {
+  } else if (transparency == 255) {
     noStroke();
-    menu();//if none of them are true the menu screen is alwaus displayed
+    menu();//if none of them are true the menu screen is always displayed
+  } else {//splash screen
+    PFont big = loadFont("Cambria-Bold-48.vlw");//for big font
+    fill(0);
+    textFont(big);
+    text("                Made By:\n\nHenry Zhang & Kevin Kolyakov", 50, 200);
+    fill(161, 214, 202, transparency);
+    rect(0, 0, 800, 500);
+    transparency++;
   }
 }
