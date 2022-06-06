@@ -29,7 +29,7 @@ void deepSea() {
   }
   info();
   noStroke();
-  if (mousePressed && mouseX>=30 && mouseX<=100 && mouseY>=450 && mouseY<=500) {
+  if (mousePressed && mouseX>=30 && mouseX<=100 && mouseY>=450 && mouseY<=500) {//if click left arrow, move to the left
     delay(200);
     isInside8=false;
     isInside7=true;

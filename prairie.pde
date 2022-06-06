@@ -30,7 +30,7 @@ void prairie() {
     isInside7=false;
     isInside8=true;
   }
-  if (mousePressed && mouseX>=30 && mouseX<=100 && mouseY>=450 && mouseY<=500) {
+  if (mousePressed && mouseX>=30 && mouseX<=100 && mouseY>=450 && mouseY<=500) {//if click left arrow, move to the left
     delay(200);
     isInside7=false;
     isInside6=true;
