@@ -92,7 +92,7 @@ void info() {
 void menu() {
   PFont big = loadFont("Cambria-Bold-48.vlw");//for big font
   PFont small = loadFont("Cambria-Bold-28.vlw");//for small font
-  background(171, 167, 161);//background colour
+  background(161, 214, 202);//background colour
   textFont(big);
   fill(0);
   textAlign(CENTER, CENTER);
