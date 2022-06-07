@@ -82,8 +82,8 @@ void info() {
       textFont(big);
       text("Main Menu", 150, 120);
       textFont(small);
-      text("Each info button will show\ninformation about the ecosystem\n", 155, 170);
-      text("\n\n\nIn the ecosystems, use the \narrow keys to change the ecosystem", 155, 170);
+      text("Each info button will show\ninformation about the ecosystem", 155, 170);
+      text("In the ecosystems use the \narrow keys to change the ecosystem", 390, 170);
     }
     textAlign(CENTER, CENTER);
   }
@@ -127,7 +127,6 @@ void menu() {
   if (mouseX > 50 && mouseX < 200 && mouseY >280 && mouseY < 355 && mousePressed)//the screen changes if it inside the button depending on the x and y values of the coordinates and the user clicks
   {
     isInside1 =true;
-    info=false;
   } else {
     isInside1=false;
   }
@@ -146,7 +145,6 @@ void menu() {
   if (mouseX > 50 && mouseX < 200 && mouseY > 380 && mouseY < 455 && mousePressed)
   {
     isInside2 =true;
-    info=false;
   } else {
     isInside2=false;
   }
@@ -165,7 +163,6 @@ void menu() {
   if (mouseX > 250 && mouseX < 400 && mouseY >280 && mouseY < 355 && mousePressed)
   {
     isInside3 =true;
-    info=false;
   } else {
     isInside3=false;
   }
@@ -184,7 +181,6 @@ void menu() {
   if (mouseX > 250 && mouseX < 400 && mouseY >380 && mouseY < 455 && mousePressed)
   {
     isInside4 =true;
-    info=false;
   } else {
     isInside4 =false;
   }
@@ -203,7 +199,6 @@ void menu() {
   if (mouseX > 450 && mouseX < 600 && mouseY >280 && mouseY < 355 && mousePressed)
   {
     isInside5 =true;
-    info=false;
   } else {
     isInside5 =false;
   }
@@ -223,7 +218,6 @@ void menu() {
   if (mouseX > 450 && mouseX < 600 && mouseY >380 && mouseY < 455 && mousePressed)
   {
     isInside6 =true;
-    info=false;
   } else {
     isInside6 =false;
   }
@@ -242,7 +236,6 @@ void menu() {
   if (mouseX > 630 && mouseX < 780 && mouseY >280 && mouseY < 355 && mousePressed)
   {
     isInside7 =true;
-    info=false;
   } else {
     isInside7 =false;
   }
@@ -261,7 +254,6 @@ void menu() {
   if (mouseX > 630 && mouseX < 780 && mouseY >380 && mouseY < 455 && mousePressed)
   {
     isInside8 =true;
-    info=false;
   } else {
     isInside8 =false;
   }
@@ -309,7 +301,6 @@ void menuReturn() {
     isInside6 = false;
     isInside7 = false;
     isInside8 = false;
-    info=false;
     delay(200);
   }
 }
@@ -350,7 +341,6 @@ void draw() {
       delay(200);
       isInside1=false;
       isInside2=true;
-      info=false;
     }
   } else if (isInside2) {
     savannah();
@@ -363,7 +353,6 @@ void draw() {
       delay(200);
       isInside2=false;
       isInside3=true;
-      info=false;
     }
     if (keyCode == LEFT && keyPressed == true) {//if the left arrow is pressed the screen changes to the previous ecosystem
       delay(200);
@@ -381,13 +370,11 @@ void draw() {
       delay(200);
       isInside3=false;
       isInside4=true;
-      info=false;
     }
     if (keyCode == LEFT && keyPressed == true) {
       delay(200);
       isInside3=false;
       isInside2=true;
-      info=false;
     }
   } else if (isInside4) {
     desert();
@@ -400,13 +387,11 @@ void draw() {
       delay(200);
       isInside4=false;
       isInside5=true;
-      info=false;
     }
     if (keyCode == LEFT && keyPressed == true) {
       delay(200);
       isInside4=false;
       isInside3=true;
-      info=false;
     }
   } else if (isInside5) {
     deciduous();
@@ -419,13 +404,11 @@ void draw() {
       delay(200);
       isInside5=false;
       isInside6=true;
-      info=false;
     }
     if (keyCode == LEFT && keyPressed == true) {
       delay(200);
       isInside5=false;
       isInside4=true;
-      info=false;
     }
   } else if (isInside6) {
     coral();
@@ -438,13 +421,11 @@ void draw() {
       delay(200);
       isInside6=false;
       isInside7=true;
-      info=false;
     }
     if (keyCode == LEFT && keyPressed == true) {
       delay(200);
       isInside6=false;
       isInside5=true;
-      info=false;
     }
   } else if (isInside7) {
     prairie();
@@ -457,13 +438,11 @@ void draw() {
       delay(200);
       isInside7=false;
       isInside8=true;
-      info=false;
     }
     if (keyCode == LEFT && keyPressed == true) {
       delay(200);
       isInside7=false;
       isInside6=true;
-      info=false;
     }
   } else if (isInside8) {
     deepSea();
@@ -475,7 +454,6 @@ void draw() {
       delay(200);
       isInside8=false;
       isInside7=true;
-      info=false;
     }
   } else if (transparency == 255) {
     noStroke();
