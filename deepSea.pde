@@ -7,6 +7,7 @@ int lanternC=2;//is added to the x value to change the x position of the lantern
 int lanternTrans = 0;
 
 void deepSea() {
+  noStroke();
   background(7, 6, 36);
   lanternfish();
   lanternX+=lanternC;//moves the lanternfish right

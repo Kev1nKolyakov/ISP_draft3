@@ -17,6 +17,7 @@ void savannah() {
     info=false;
   }
   elephant();
+  lion();
 }
 
 void elephant() {
@@ -39,4 +40,12 @@ void elephant() {
   noFill();
   arc(elephantX-130, elephantY-40, 20, 20, PI+HALF_PI, PI+HALF_PI+QUARTER_PI);
   
+}
+
+void lion(){
+  noStroke();
+  fill(#EDA230);
+  ellipse(100,110,90,90);
+  fill(#D3BD4F);
+  ellipse(100,100,60,60);
 }

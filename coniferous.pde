@@ -6,6 +6,7 @@ float rabbitY=300; //controls rabbit y coordinate
 Boolean rabbitAlive=true; //boolean variable that detects if rabbit is alive
 
 void coniferous() {
+  noStroke();
   background();
   if ((rabbitX+90)-(wolfX+290)<20) { //detects if the wolf and rabbit collides
     rabbitAlive=false; //computer sets rabbit boolean as dead

@@ -619,6 +619,7 @@ void hummingbird() {
 }
 
 void tropForest() {
+  noStroke();
   tropBackground();
   snake();
   hummingbird();

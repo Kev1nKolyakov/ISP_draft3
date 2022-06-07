@@ -12,6 +12,7 @@ int bubbleY=600;
 int bubbleC=2;
 
 void coral() {
+  noStroke();
   backgroundCoral();
 
   eel();
