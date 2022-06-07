@@ -340,6 +340,7 @@ void setup() {
 
 //void draw
 void draw() {
+  println(frameRate);
   if (isInside1) {//changes the screen from the menu to an ecosystem
     tropForest();
     noStroke();
