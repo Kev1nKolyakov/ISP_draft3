@@ -132,6 +132,8 @@ void addax() {
   fill(235, 228, 197);
   noStroke();
   ellipse(addaxX-40, addaxY+95, 45, 65);
+  fill(191, 142, 63);
+  arc(addaxX-40, addaxY+95, 45, 65, PI+QUARTER_PI, PI+HALF_PI);
   //horns
   noFill();
   stroke(176, 168, 135);
