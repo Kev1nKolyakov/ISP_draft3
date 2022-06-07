@@ -5,6 +5,7 @@ int prairieY=230;//controls y coordinate of prairie dog
 Boolean coyoteClose=false;//used to detect if the coyote is close to the prairie dog
 
 void prairie() {
+  noStroke();
   prairieBackground();
   coyote();
   prairieDog();
@@ -29,16 +30,20 @@ void prairie() {
     delay(200);
     isInside7=false;
     isInside8=true;
+    info=false;
   }
   if (mousePressed && mouseX>=30 && mouseX<=100 && mouseY>=450 && mouseY<=500) {//if click left arrow, move to the left
     delay(200);
     isInside7=false;
     isInside6=true;
+    info=false;
   }
 }
 
 void prairieBackground() {
   background(#9DCFD8);
+  fill(#F5D848);
+  ellipse(600,100,100,100);
 }
 
 void coyote() {

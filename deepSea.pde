@@ -33,6 +33,7 @@ void deepSea() {
     delay(200);
     isInside8=false;
     isInside7=true;
+    info=false;
   }
 }
 

@@ -15,11 +15,13 @@ void desert() {
     delay(200);
     isInside4=false;
     isInside5=true;
+    info=false;
   }
   if (mousePressed && mouseX>=30 && mouseX<=100 && mouseY>=450 && mouseY<=500) {//if click left arrow, move to the left
     delay(200);
     isInside4=false;
     isInside3=true;
+    info=false;
   }
 }
 
