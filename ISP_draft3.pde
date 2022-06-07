@@ -8,7 +8,8 @@ boolean isInside6 = false;
 boolean isInside7 = false;
 boolean isInside8 = false;
 int transparency = 0;//stores the transparency of the splash screen
-
+int loadingX=100;
+Boolean load=false;
 
 void info() {
   PFont big = loadFont("Cambria-Bold-48.vlw");//for big font
@@ -77,6 +78,12 @@ void info() {
       textFont(small);
       text("Animals: \n - Lanternfish \n - Anglerfish", 155, 170);
       text("Temperature Range: \n -5° to 5°C", 390, 170);
+    } else {
+      textFont(big);
+      text("Main Menu", 150, 120);
+      textFont(small);
+      text("Each info button will show\ninformation about the ecosystem\n", 155, 170);
+      text("\n\n\nIn the ecosystems, use the \narrow keys to change the ecosystem", 155, 170);
     }
     textAlign(CENTER, CENTER);
   }
@@ -102,6 +109,8 @@ void menu() {
   textFont(small);
   text("\n\n\nBy: Henry Zhang and Kevin Kolyakov", 400, 100);//authors
   text("Ecosystems:", 400, 250);//subtitle
+
+
 
   //buttons
   if (mouseX > 50 && mouseX < 200 && mouseY >280 && mouseY < 355) {//the colour of the button changes if it inside the button depending on the x and y values of the coordinates
@@ -250,21 +259,23 @@ void menu() {
   }
 
 
-  if (mouseX > 0 && mouseX < 90 && mouseY > 0 && mouseY < 75)
+
+  if (mouseX > 700 && mouseX < 800 && mouseY > 0 && mouseY < 75)
   {
     fill(196, 191, 181);
   } else {
     fill(255);
   }
 
-  rect(0, 0, 90, 75);
+  rect(700, 0, 800, 75);
   fill(0);
-  text("Exit", 40, 40);
+  text("Exit", 750, 40);
 
-  if (mouseX > 0 && mouseX < 90 && mouseY > 0 && mouseY < 75 && mousePressed)
+  if (mouseX > 700 && mouseX < 800 && mouseY > 0 && mouseY < 75 && mousePressed)
   {
     exit();
   }
+  info();
 }
 
 void menuReturn() {
@@ -290,6 +301,7 @@ void menuReturn() {
     isInside6 = false;
     isInside7 = false;
     isInside8 = false;
+    delay(200);
   }
 }
 
@@ -447,12 +459,40 @@ void draw() {
     noStroke();
     menu();//if none of them are true the menu screen is always displayed
   } else {//splash screen
+    background(200);
+    if (load) {
+      transparency+=3;
+    }
     PFont big = loadFont("Cambria-Bold-48.vlw");//for big font
+    PFont small = loadFont("Cambria-Bold-28.vlw");//for small font
     fill(0);
     textFont(big);
     text("                Made By:\n\nHenry Zhang & Kevin Kolyakov", 50, 200);
+    fill(255);
+    rect(100, 370, loadingX, 40);
+    stroke(255);
+    noFill();
+    rect(90, 360, 620, 60);
+    fill(0);
+    textFont(small);
+    if (load==false) {
+      if (second()%4==0) {
+        text("Loading.", 340, 400);
+      } else if (second()%4==1) {
+        text("Loading..", 340, 400);
+      } else if (second()%4==2) {
+        text("Loading...", 340, 400);
+      } else {
+        text("Loading", 340, 400);
+      }
+    }
+    textAlign(LEFT);
+    if (loadingX==600) {
+      load=true;
+    } else {
+      loadingX+=10;
+    }
     fill(161, 214, 202, transparency);
     rect(0, 0, 800, 500);
-    transparency++;
   }
 }
