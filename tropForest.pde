@@ -632,5 +632,6 @@ void tropForest() {
     delay(200);
     isInside1=false;
     isInside2=true;
+    info=false;
   }
 }

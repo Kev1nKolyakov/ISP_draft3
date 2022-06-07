@@ -64,11 +64,13 @@ void coral() {
     delay(200);
     isInside6=false;
     isInside7=true;
+    info=false;
   }
   if (mousePressed && mouseX>=30 && mouseX<=100 && mouseY>=450 && mouseY<=500) {//if click left arrow, move to the left
     delay(200);
     isInside6=false;
     isInside5=true;
+    info=false;
   }
 }
 
