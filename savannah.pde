@@ -1,5 +1,7 @@
 int elephantX=400;//controls x coordinate of elephant
 int elephantY=200;//controls y coordinate of elephant
+int lionX=0;//controls x coordinate of lion
+int lionY=0;//controls y coordinate of lion
 
 void savannah() {
   background(213, 230, 224);
@@ -25,13 +27,46 @@ void elephant() {
   fill(141, 145, 145);
   noStroke();
   ellipse(elephantX, elephantY, 250, 180);
+  //tail
+  stroke(0);
+  line(elephantX+120, elephantY, elephantX+150, elephantY);
+  noStroke();
+  fill(141, 145, 145);
+  ellipse(elephantX+150, elephantY, 20, 10);
+  //hind leg
+  rect(elephantX+30, elephantY+50, 40, 100, 25);  
+  //toes
+  fill(189, 189, 189);
+  ellipse(elephantX+40, elephantY+135, 10, 20);
+  ellipse(elephantX+50, elephantY+135, 10, 20);
+  ellipse(elephantX+60, elephantY+135, 10, 20);
+  //front leg
+  pushMatrix();
+  translate(-100, 0);
+  fill(141, 145, 145);
+  rect(elephantX+30, elephantY+50, 40, 100, 25);
+  //toes
+  fill(189, 189, 189);
+  ellipse(elephantX+40, elephantY+135, 10, 20);
+  ellipse(elephantX+50, elephantY+135, 10, 20);
+  ellipse(elephantX+60, elephantY+135, 10, 20);
+  popMatrix();
   //head
+  fill(141, 145, 145);
   ellipse(elephantX-130, elephantY-20, 120, 100);
   //trunk
   stroke(141, 145, 145);
   noFill();
   strokeWeight(20);
   arc(elephantX-200, elephantY-20, 100, 100, 0, HALF_PI+QUARTER_PI);
+  //tusk
+  stroke(255);
+  triangle(elephantX-170, elephantY+20, elephantX-173, elephantY+20, elephantX-190, elephantY+40);
+  //ear
+  stroke(0);
+  strokeWeight(5);
+  fill(141, 145, 145);
+  arc(elephantX-100, elephantY-20, 80, 90, PI+HALF_PI, TWO_PI+HALF_PI+QUARTER_PI);
   //eye
   stroke(0);
   strokeWeight(15);
@@ -39,13 +74,105 @@ void elephant() {
   strokeWeight(2);
   noFill();
   arc(elephantX-130, elephantY-40, 20, 20, PI+HALF_PI, PI+HALF_PI+QUARTER_PI);
-  
 }
 
-void lion(){
+void lion() {
   noStroke();
-  fill(#EDA230);
-  ellipse(100,110,90,90);
+  //body
   fill(#D3BD4F);
-  ellipse(100,100,60,60);
+  beginShape();
+  vertex(lionX+123, lionY+115);
+  vertex(lionX+159, lionY+107);
+  vertex(lionX+182, lionY+112);
+  vertex(lionX+199, lionY+112);
+  vertex(lionX+217, lionY+110);
+  vertex(lionX+251, lionY+104);
+  vertex(lionX+268, lionY+111);
+  vertex(lionX+280, lionY+125);
+  vertex(lionX+283, lionY+145);
+  vertex(lionX+284, lionY+166);
+  vertex(lionX+298, lionY+182);
+  vertex(lionX+305, lionY+190);
+  vertex(lionX+305, lionY+201);
+  vertex(lionX+307, lionY+225);
+  vertex(lionX+300, lionY+227);
+  vertex(lionX+285, lionY+227);
+  vertex(lionX+283, lionY+221);
+  vertex(lionX+286, lionY+217);
+  vertex(lionX+298, lionY+217);
+  vertex(lionX+296, lionY+211);
+  vertex(lionX+292, lionY+200);
+  vertex(lionX+256, lionY+177);
+  vertex(lionX+255, lionY+187);
+  vertex(lionX+258, lionY+196);
+  vertex(lionX+253, lionY+206);
+  vertex(lionX+243, lionY+215);
+  vertex(lionX+240, lionY+221);
+  vertex(lionX+227, lionY+224);
+  vertex(lionX+215, lionY+223);
+  vertex(lionX+214, lionY+215);
+  vertex(lionX+218, lionY+213);
+  vertex(lionX+229, lionY+214);
+  vertex(lionX+237, lionY+201);
+  vertex(lionX+239, lionY+188);
+  vertex(lionX+230, lionY+174);
+  vertex(lionX+229, lionY+170);
+  vertex(lionX+229, lionY+164);
+  vertex(lionX+227, lionY+164);
+  vertex(lionX+208, lionY+176);
+  vertex(lionX+199, lionY+180);
+  vertex(lionX+187, lionY+179);
+  vertex(lionX+175, lionY+178);
+  vertex(lionX+172, lionY+184);
+  vertex(lionX+168, lionY+196);
+  vertex(lionX+166, lionY+207);
+  vertex(lionX+165, lionY+233);
+  vertex(lionX+162, lionY+236);
+  vertex(lionX+137, lionY+237);
+  vertex(lionX+134, lionY+234);
+  vertex(lionX+133, lionY+231);
+  vertex(lionX+137, lionY+226);
+  vertex(lionX+148, lionY+227);
+  vertex(lionX+147, lionY+203);
+  vertex(lionX+142, lionY+194);
+  vertex(lionX+141, lionY+222);
+  vertex(lionX+138, lionY+228);
+  vertex(lionX+124, lionY+230);
+  vertex(lionX+113, lionY+229);
+  vertex(lionX+109, lionY+224);
+  vertex(lionX+123, lionY+222);
+  vertex(lionX+124, lionY+205);
+  vertex(lionX+118, lionY+169);
+  endShape();
+  //tail
+  noFill();
+  stroke(#D3BD4F);
+  strokeWeight(7);
+  arc(lionX+260, lionY+90, 30, 50, PI+HALF_PI, TWO_PI+HALF_PI);
+  noStroke();
+  fill(#A5763C);
+  ellipse(lionX+260, lionY+65, 12, 10);
+  //mane
+  fill(#EDA230);
+  ellipse(lionX+120, lionY+120, 90, 95);
+  //head
+  fill(#D3BD4F);
+  ellipse(lionX+120, lionY+120, 60, 60);
+  //ears
+  ellipse(lionX+136, lionY+95, 15, 15);
+  ellipse(lionX+104, lionY+95, 15, 15);
+  //eyes
+  fill(0);
+  ellipse(lionX+130, lionY+110, 8, 8);
+  ellipse(lionX+110, lionY+110, 8, 8);
+  //nose
+  fill(#A5763C);
+  triangle(lionX+120, lionY+120, lionX+125, lionY+127, lionX+115, lionY+127);
+  //mouth
+  stroke(0);
+  strokeWeight(1);
+  line(lionX+120, lionY+127, lionX+120, lionY+130);
+  line(lionX+125, lionY+132, lionX+120, lionY+130);
+  line(lionX+115, lionY+132, lionX+120, lionY+130);
+  noStroke();
 }
