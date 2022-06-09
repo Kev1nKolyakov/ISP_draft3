@@ -175,4 +175,8 @@ void lion() {
   line(lionX+125, lionY+132, lionX+120, lionY+130);
   line(lionX+115, lionY+132, lionX+120, lionY+130);
   noStroke();
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> db93aa8925c4c2bf8e7354e06d9f8b4ecb047741
