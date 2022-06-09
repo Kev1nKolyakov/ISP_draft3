@@ -1,3 +1,8 @@
+//Name: Henry Zhang and Kevin Kolyakov
+//Date: May 9
+//Teacher: Ms.Basaraba
+//Description: This program will tell is about exploring different ecosystems and learning about the animals and environment in each ecosystem.
+
 //declaration section
 boolean isInside1 = false;//each isInside variable determines which screen to switch to from the 8 animated screens
 boolean isInside2 = false;
