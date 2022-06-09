@@ -29,8 +29,8 @@ void savannah() {
 
   //once the elephant reaches a certain point the lion will move onto the screen and elephant will move faster
   if (elephantX==250) {
-    lionC=7;
-    elephantC=8;
+    lionC=6;
+    elephantC=7;
   }
   
   //teleports the elephant back and resets the speed

@@ -23,7 +23,7 @@ void info() {
   strokeWeight(2);
   //shows text if the mouse is clicked inside the circle and it goes away if the button is clicked again
   if (dist(mouseX, mouseY, 40, 40) <= 25 && mousePressed) {
-    delay(100);
+    delay(300);
     if (info) {
       info = false;
     } else {
@@ -83,6 +83,7 @@ void info() {
       textFont(small);
       text("Animals: \n - Lanternfish \n - Anglerfish", 155, 170);
       text("Temperature Range: \n -5° to 5°C", 390, 170);
+      text("\n\n\n\nFun Fact:\nApproximately 98 percent of the \noceans' species live in, on or just above\nthe floor of the sea", 155, 170);
     } else {
       textFont(big);
       text("Main Menu", 150, 120);
@@ -315,7 +316,7 @@ void menuReturn() {
     isInside7 = false;
     isInside8 = false;
     info=false;
-    delay(200);
+    delay(300);
   }
 }
 
