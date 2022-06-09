@@ -1,7 +1,9 @@
-int elephantX=200;//controls x coordinate of elephant
-int elephantY=200;//controls y coordinate of elephant
-int lionX=0;//controls x coordinate of lion
-int lionY=0;//controls y coordinate of lion
+int elephantX=800;//controls x coordinate of elephant
+int elephantY=340;//controls y coordinate of elephant
+int elephantC=2;//controls change of the X coordinate of elephant
+int lionX=850;//controls x coordinate of lion
+int lionY=250;//controls y coordinate of lion
+int lionC=0;//controls change of the X coordinate of lion
 
 void savannah() {
   savBackground();
@@ -20,7 +22,30 @@ void savannah() {
   elephant();
   lion();
   info();
+  
+  //moves elephant and lion depending on lionC and elephantC
+  elephantX-=elephantC;
+  lionX-=lionC;
+
+  //once the elephant reaches a certain point the lion will move onto the screen and elephant will move faster
+  if (elephantX==250) {
+    lionC=7;
+    elephantC=8;
+  }
+  
+  //teleports the elephant back and resets the speed
+  if (elephantX<=-500) {
+    elephantX=1000;
+    elephantC=2;
+  }
+  
+  //teleports the lion back
+  if (lionX<=-300) {
+    lionX=800;
+    lionC=0;
+  }
 }
+
 
 void savBackground() {
   for (int i = 0; i <= 400  ; i++) {
@@ -60,7 +85,10 @@ void savBackground() {
   popMatrix();
 }
 
+
 void elephant() {
+  pushMatrix();
+  translate(300, 0);
   //body
   fill(141, 145, 145);
   noStroke();
@@ -112,6 +140,7 @@ void elephant() {
   strokeWeight(2);
   noFill();
   arc(elephantX-130, elephantY-40, 20, 20, PI+HALF_PI, PI+HALF_PI+QUARTER_PI);
+  popMatrix();
 }
 
 void lion() {
