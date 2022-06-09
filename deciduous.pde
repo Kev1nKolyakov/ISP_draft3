@@ -1,9 +1,10 @@
-float owlX=0;
-float owlY=0;
-float owlXC=5;
-float owlYC=5;
-float ratX=810;
-Boolean ratAlive=true;
+//declaration section
+float owlX=0;//stores the x value of the owl
+float owlY=0;//stores the y value of the owl
+float owlXC=5;//stores the x value change of the owl
+float owlYC=5;//stores the y value change of the owl
+float ratX=810;//stores the x value of the rat
+Boolean ratAlive=true;//stores if the rat has been killed
 
 void decBackground() {
   background(#1D2058);
