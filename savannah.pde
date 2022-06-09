@@ -1,10 +1,10 @@
-int elephantX=400;//controls x coordinate of elephant
+int elephantX=200;//controls x coordinate of elephant
 int elephantY=200;//controls y coordinate of elephant
 int lionX=0;//controls x coordinate of lion
 int lionY=0;//controls y coordinate of lion
 
 void savannah() {
-  background(213, 230, 224);
+  savBackground();
   if (mousePressed && mouseX>=700 && mouseX<=770 && mouseY>=450 && mouseY<=500) {//if click right arrow, move to the right
     delay(200);
     isInside2=false;
@@ -20,6 +20,44 @@ void savannah() {
   elephant();
   lion();
   info();
+}
+
+void savBackground() {
+  for (int i = 0; i <= 400  ; i++) {
+    stroke(lerpColor(color(#F2E7A4), color(#EDA837), map(i, 0, height, 0, 1)));
+    line(0, i, width, i);
+  }
+  fill(#9FAF58);
+  noStroke();
+  rect(0,400,800,100);
+  fill(#4D4022);
+  pushMatrix();
+  translate(110,-30);
+  rect(550,300,30,150,100);
+  rect(550,420,30,30);
+  quad(560,320,580,310,450,250,440,250);
+  quad(550,310,580,310,650,250,630,250);
+  quad(510,290,525,295,570,250,560,250);
+  fill(#538E1D);
+  ellipse(500,250,200,30);
+  ellipse(600,245,160,35);
+  ellipse(540,250,100,35);
+  popMatrix();
+  
+  pushMatrix();
+  scale(0.8);
+  translate(120,80);
+  fill(#4D4022);
+  rect(550,300,30,150,100);
+  rect(550,420,30,30);
+  quad(560,320,580,310,450,250,440,250);
+  quad(550,310,580,310,650,250,630,250);
+  quad(510,290,525,295,570,250,560,250);
+  fill(#538E1D);
+  ellipse(500,250,200,30);
+  ellipse(600,245,160,35);
+  ellipse(540,250,100,35);
+  popMatrix();
 }
 
 void elephant() {
@@ -175,8 +213,4 @@ void lion() {
   line(lionX+125, lionY+132, lionX+120, lionY+130);
   line(lionX+115, lionY+132, lionX+120, lionY+130);
   noStroke();
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> db93aa8925c4c2bf8e7354e06d9f8b4ecb047741
