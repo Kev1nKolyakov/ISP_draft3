@@ -29,7 +29,7 @@ void decBackground() {
   ellipse(600, 100, 150, 150);
   fill(#1D2058);
   ellipse(630, 100, 120, 120);
-}rr
+}
 
 void rat() {
   fill(200);
