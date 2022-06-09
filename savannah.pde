@@ -5,7 +5,6 @@ int lionY=0;//controls y coordinate of lion
 
 void savannah() {
   background(213, 230, 224);
-  info();
   if (mousePressed && mouseX>=700 && mouseX<=770 && mouseY>=450 && mouseY<=500) {//if click right arrow, move to the right
     delay(200);
     isInside2=false;
@@ -20,6 +19,7 @@ void savannah() {
   }
   elephant();
   lion();
+  info();
 }
 
 void elephant() {
