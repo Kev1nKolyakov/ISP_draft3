@@ -526,7 +526,7 @@ void draw() {
     if (loadingX==600) {//if the rectangle is long enough
       load=true;//finished loading
     } else {
-      loadingX+=10;//if not long enough, keep adding
+      loadingX+=2;//if not long enough, keep adding
     }
     fill(161, 214, 202, transparency);//covers the entire screen with the background of the menu
     rect(0, 0, 800, 500);
