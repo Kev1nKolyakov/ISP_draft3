@@ -28,11 +28,9 @@ void desert() {
 
 void desertBackground() {
   background(242, 209, 160);
-
   //water
   fill(67, 184, 217);
   ellipse(200, 430, 80, 40);
-
   //cactus #1
   pushMatrix();
   translate(-300, 20);
@@ -51,7 +49,6 @@ void desertBackground() {
   fill(242, 209, 160);
   rect(375, 280, 50, 50);
   popMatrix();
-
   //cactus #2
   pushMatrix();
   translate(-50, -150);
@@ -70,7 +67,6 @@ void desertBackground() {
   fill(242, 209, 160);
   rect(375, 280, 50, 50);
   popMatrix();
-
   //cactus #3
   pushMatrix();
   translate(150, 150);
