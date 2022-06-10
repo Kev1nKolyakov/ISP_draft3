@@ -41,42 +41,49 @@ void info() {
       textFont(small);
       text("Animals: \n - Black Panther \n - Snake \n - Hummingbird", 155, 170);
       text("Temperature Range: \n 20° to 25°C", 390, 170);
+      text("\n\n\n\nFun Fact:\nRainforests cover less than 3% of \nthe planet, yet they are home to more \nthan half our planet's species", 155, 180);
     } else if (isInside2) {
       textFont(big);
-      text("Savannah", 150, 120);
+      text("Savanna", 150, 120);
       textFont(small);
       text("Animals: \n - Lion \n - Elephant", 155, 170);
       text("Temperature Range: \n 20° to 30°C", 390, 170);
+      text("\n\n\n\nFun Fact:\nThe first human remains were found \nin a savanna called the Serengeti", 155, 170);
     } else if (isInside3) {
       textFont(big);
       text("Coniferous Forest", 150, 120);
       textFont(small);
       text("Animals: \n - Wolf \n - Rabbit", 155, 170);
       text("Temperature Range: \n -40° to 20°C", 390, 170);
+      text("\n\n\n\nFun Fact:\nConiferous forests considered the \nlargest land-based biome, covering \nover 15% of Earth’s total land area", 155, 170);
     } else if (isInside4) {
       textFont(big);
       text("Desert", 150, 120);
       textFont(small);
       text("Animals: \n - Camel \n - Addax", 155, 170);
       text("Temperature Range: \n -5° to 40°C", 390, 170);
+      text("\n\n\n\nFun Fact:\nAntarctica is the largest \ncold desert on Earth", 155, 170);
     } else if (isInside5) {
       textFont(big);
       text("Deciduous Forest", 150, 120);
       textFont(small);
       text("Animals: \n - Owl \n - Mouse", 155, 170);
       text("Temperature Range: \n -30° to 30°C", 390, 170);
+      text("\n\n\n\nFun Fact:\nTrees in this deciduous forest change \ncolors every season because they stop \nproducing chlorophyll", 155, 170);
     } else if (isInside6) {  
       textFont(big);
       text("Coral Reef", 150, 120);
       textFont(small);
       text("Animals: \n - Clownfish \n - Sea Turtle \n - Eel \n - Coral", 155, 170);
       text("Temperature Range: \n 20° to 40°C", 390, 170);
+      text("\n\n\n\n\nFun Fact:\nCoral reefs make up 1% of the ocean, \nbut they contain 25% of all marine life", 155, 170);
     } else if (isInside7) {
       textFont(big);
       text("Prairie", 150, 120);
       textFont(small);
       text("Animals: \n - Coyote \n - Prairie Dog", 155, 170);
       text("Temperature Range: \n -20° to 30°C", 390, 170);
+      text("\n\n\n\nFun Fact:\nPrairies formed about 8,000 years ago", 155, 170);
     } else if (isInside8) {
       textFont(big);
       text("Deep Sea", 150, 120);
@@ -147,7 +154,7 @@ void menu() {
 
   rect(50, 380, 150, 75, 15);
   fill(0);
-  text("Savannah", 120, 420);
+  text("Savanna", 120, 420);
 
   if (mouseX > 50 && mouseX < 200 && mouseY > 380 && mouseY < 455 && mousePressed)
   {
