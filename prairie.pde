@@ -1,9 +1,3 @@
-int coyoteX=0;//controls x coordinate of coyote
-int coyoteY=200;//controls y coordinate of coyote
-int prairieX=50;//controls x coordinate of prairie dog
-int prairieY=230;//controls y coordinate of prairie dog
-Boolean coyoteClose=false;//used to detect if the coyote is close to the prairie dog
-
 void prairie() {
   noStroke();
   prairieBackground();

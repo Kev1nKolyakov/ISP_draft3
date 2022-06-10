@@ -1,11 +1,3 @@
-//declaration section
-int anglerX=700;//stores the x value of the anglerfish
-int fishY=250;//stores the y value of the fishes
-int anglerC=4;//is added to the x value to change the x position of the anglerfish
-int lanternX=-200;//stores the x value of the anglerfish
-int lanternC=2;//is added to the x value to change the x position of the lanternfish
-int lanternTrans = 0;//stores the transparency of the anglerfish
-
 void deepSea() {
   noStroke();
   background(7, 6, 36);

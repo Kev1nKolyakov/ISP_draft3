@@ -1,10 +1,3 @@
-//declaration section
-float wolfX=0; //controls wolf x coordinate
-float wolfY=200; //controls wolf y coordinate
-float rabbitX=700; //controls rabbit x coordinate
-float rabbitY=300; //controls rabbit y coordinate
-Boolean rabbitAlive=true; //boolean variable that detects if rabbit is alive
-
 void coniferous() {
   noStroke();
   background();

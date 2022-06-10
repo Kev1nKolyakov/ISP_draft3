@@ -1,13 +1,3 @@
-float pantherX = 800; //controls the x coordinate of the panther
-float pantherY = 400; //controls the y coordinate of the panter
-int pantherXC=3; //controls how quickly the panther moves along the x axis
-Boolean close=false; //detects if the panther is close to the snake
-float snakeX=100; //controls the x coordinate of the snake
-float snakeY=2400; //controls the y coordinate of the snake
-int hummingX = -400; //controls the x coordinate of the bird
-int hummingY = 250; //controls the y coordinate of the bird
-float hummingYC=1; //controls the direction that the bird goes along the y axis
-
 void tropBackground() {
   background(31, 63, 48);
   //background trees

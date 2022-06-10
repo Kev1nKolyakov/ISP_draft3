@@ -1,10 +1,3 @@
-int elephantX=800;//controls x coordinate of elephant
-int elephantY=340;//controls y coordinate of elephant
-int elephantC=2;//controls change of the X coordinate of elephant
-int lionX=850;//controls x coordinate of lion
-int lionY=250;//controls y coordinate of lion
-int lionC=0;//controls change of the X coordinate of lion
-
 void savanna() {
   savBackground();
   if (mousePressed && mouseX>=700 && mouseX<=770 && mouseY>=450 && mouseY<=500) {//if click right arrow, move to the right

@@ -1,15 +1,3 @@
-//declaration section
-float eelX=70;//stores the x value of the eel
-float eelY=500;//stores the y value of the eel
-float eelC=1;//stores the movement amount of the eel
-float clownX=-200;//stores the x value of the clownfish
-float clownY=250;//stores the y value of the clownfish
-float turtleX=1000;//stores the x value of the turtle
-float turtleY=400;//stores the y value of the turtle
-float turtleC=2;//stores the movement amount of the turtle
-boolean info;//stores info button was clicked
-int bubbleY=600;//stores the y value of the bubble
-
 void coral() {
   noStroke();
   backgroundCoral();

@@ -1,8 +1,3 @@
-int camelX=900;//stores the x value of the camel
-int camelY=100;//stores the y value of the camel
-int addaxX=250;//stores the x value of the addax
-int addaxY=300;//stores the y value of the addax
-
 void desert() {
   noStroke();
   desertBackground();
