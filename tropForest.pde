@@ -60,7 +60,7 @@ void tropBackground() {
   ellipse(580, 450, 600, 150);
 }
 
-void panther() { //method uesd for the panther moving to the left
+void panther() { //method used for the panther moving to the left
   pushMatrix();
   scale(0.5);
   pantherX-=pantherXC;
