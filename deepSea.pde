@@ -75,7 +75,7 @@ void anglerFish() {
 }
 
 void lanternfish() {
-  
+
   //body
   noStroke();
   fill(25, 71, 99);

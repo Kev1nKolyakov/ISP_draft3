@@ -37,7 +37,7 @@ void prairie() {
 void prairieBackground() {
   background(#9DCFD8);//sky
   fill(#F5D848);
-  ellipse(600,100,100,100);//sun
+  ellipse(600, 100, 100, 100);//sun
 }
 
 void coyote() {

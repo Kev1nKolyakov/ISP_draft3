@@ -15,7 +15,7 @@ void savanna() {
   elephant();
   lion();
   info();
-  
+
   //moves elephant and lion depending on lionC and elephantC
   elephantX-=elephantC;
   lionX-=lionC;
@@ -25,13 +25,13 @@ void savanna() {
     lionC=6;
     elephantC=7;
   }
-  
+
   //teleports the elephant back and resets the speed
   if (elephantX<=-500) {
     elephantX=1000;
     elephantC=2;
   }
-  
+
   //teleports the lion back
   if (lionX<=-300) {
     lionX=800;
@@ -41,40 +41,40 @@ void savanna() {
 
 
 void savBackground() {
-  for (int i = 0; i <= 400  ; i++) {
+  for (int i = 0; i <= 400; i++) {
     stroke(lerpColor(color(#F2E7A4), color(#EDA837), map(i, 0, height, 0, 1)));
     line(0, i, width, i);
   }
   fill(#9FAF58);
   noStroke();
-  rect(0,400,800,100);
+  rect(0, 400, 800, 100);
   fill(#4D4022);
   pushMatrix();
-  translate(110,-30);
-  rect(550,300,30,150,100);
-  rect(550,420,30,30);
-  quad(560,320,580,310,450,250,440,250);
-  quad(550,310,580,310,650,250,630,250);
-  quad(510,290,525,295,570,250,560,250);
+  translate(110, -30);
+  rect(550, 300, 30, 150, 100);
+  rect(550, 420, 30, 30);
+  quad(560, 320, 580, 310, 450, 250, 440, 250);
+  quad(550, 310, 580, 310, 650, 250, 630, 250);
+  quad(510, 290, 525, 295, 570, 250, 560, 250);
   fill(#538E1D);
-  ellipse(500,250,200,30);
-  ellipse(600,245,160,35);
-  ellipse(540,250,100,35);
+  ellipse(500, 250, 200, 30);
+  ellipse(600, 245, 160, 35);
+  ellipse(540, 250, 100, 35);
   popMatrix();
-  
+
   pushMatrix();
   scale(0.8);
-  translate(120,80);
+  translate(120, 80);
   fill(#4D4022);
-  rect(550,300,30,150,100);
-  rect(550,420,30,30);
-  quad(560,320,580,310,450,250,440,250);
-  quad(550,310,580,310,650,250,630,250);
-  quad(510,290,525,295,570,250,560,250);
+  rect(550, 300, 30, 150, 100);
+  rect(550, 420, 30, 30);
+  quad(560, 320, 580, 310, 450, 250, 440, 250);
+  quad(550, 310, 580, 310, 650, 250, 630, 250);
+  quad(510, 290, 525, 295, 570, 250, 560, 250);
   fill(#538E1D);
-  ellipse(500,250,200,30);
-  ellipse(600,245,160,35);
-  ellipse(540,250,100,35);
+  ellipse(500, 250, 200, 30);
+  ellipse(600, 245, 160, 35);
+  ellipse(540, 250, 100, 35);
   popMatrix();
 }
 
