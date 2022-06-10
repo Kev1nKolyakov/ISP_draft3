@@ -7,9 +7,8 @@ float clownY=250;//stores the y value of the clownfish
 float turtleX=1000;//stores the x value of the turtle
 float turtleY=400;//stores the y value of the turtle
 float turtleC=2;//stores the movement amount of the turtle
-boolean info;//stores ifo button was clicked
-int bubbleY=600;
-int bubbleC=2;
+boolean info;//stores info button was clicked
+int bubbleY=600;//stores the y value of the bubble
 
 void coral() {
   noStroke();
@@ -114,7 +113,7 @@ void backgroundCoral() {
 
 
   //bubbles
-  bubbleY-=bubbleC;
+  bubbleY-=2;
   stroke(255);
   strokeWeight(3);
   ellipse(400, bubbleY+10, 40, 40);

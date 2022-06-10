@@ -497,7 +497,7 @@ void draw() {
   } else {//splash screen
     background(200);
     if (load) {
-      transparency+=3;
+      transparency+=3;//transparency decreases by 3 each time
     }
     PFont big = loadFont("Cambria-Bold-48.vlw");//for big font
     PFont small = loadFont("Cambria-Bold-28.vlw");//for small font
@@ -528,7 +528,7 @@ void draw() {
     } else {
       loadingX+=10;//if not long enough, keep adding
     }
-    fill(161, 214, 202, transparency);
+    fill(161, 214, 202, transparency);//covers the entire screen with the background of the menu
     rect(0, 0, 800, 500);
   }
 }
