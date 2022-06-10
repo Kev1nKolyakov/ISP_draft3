@@ -41,9 +41,9 @@ void prairie() {
 }
 
 void prairieBackground() {
-  background(#9DCFD8);
+  background(#9DCFD8);//sky
   fill(#F5D848);
-  ellipse(600,100,100,100);
+  ellipse(600,100,100,100);//sun
 }
 
 void coyote() {
@@ -144,7 +144,7 @@ void prairieDog() {
   noStroke();
   //grass
   fill(#316F35);
-  rect(0, 450, 800, 50);
+  rect(0, 450, 800, 50);//the grass is in the prairie dog method because the prairie dog needs to hide behind the grass
   //mound
   fill(#6C543C);
   arc(prairieX+500, 480, 200, 100, PI+(QUARTER_PI/4), TWO_PI-(QUARTER_PI/4), OPEN);
