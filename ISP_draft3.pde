@@ -13,8 +13,8 @@ boolean isInside6 = false;
 boolean isInside7 = false;
 boolean isInside8 = false;
 int transparency = 0;//stores the transparency of the splash screen
-int loadingX=100;
-Boolean load=false;
+int loadingX=100;//stores the movement of the loading bar
+Boolean load=false;//detects when the loading bar has finished
 
 void info() {
   PFont big = loadFont("Cambria-Bold-48.vlw");//for big font
@@ -511,8 +511,8 @@ void draw() {
     rect(90, 360, 620, 60);
     fill(0);
     textFont(small);
-    if (load==false) {
-      if (second()%4==0) {
+    if (load==false) {//if the bar hasn't reached the end yet
+      if (second()%4==0) {//every second the text switches between 4 different variants
         text("Loading.", 340, 400);
       } else if (second()%4==1) {
         text("Loading..", 340, 400);
@@ -523,10 +523,10 @@ void draw() {
       }
     }
     textAlign(LEFT);
-    if (loadingX==600) {
-      load=true;
+    if (loadingX==600) {//if the rectangle is long enough
+      load=true;//finished loading
     } else {
-      loadingX+=10;
+      loadingX+=10;//if not long enough, keep adding
     }
     fill(161, 214, 202, transparency);
     rect(0, 0, 800, 500);
