@@ -43,7 +43,7 @@ void info() {
       text("Temperature Range: \n 20° to 25°C", 390, 170);
     } else if (isInside2) {
       textFont(big);
-      text("Savannah", 150, 120);
+      text("Savanna", 150, 120);
       textFont(small);
       text("Animals: \n - Lion \n - Elephant", 155, 170);
       text("Temperature Range: \n 20° to 30°C", 390, 170);
@@ -147,7 +147,7 @@ void menu() {
 
   rect(50, 380, 150, 75, 15);
   fill(0);
-  text("Savannah", 120, 420);
+  text("Savanna", 120, 420);
 
   if (mouseX > 50 && mouseX < 200 && mouseY > 380 && mouseY < 455 && mousePressed)
   {
@@ -360,7 +360,7 @@ void draw() {
       info=false;
     }
   } else if (isInside2) {
-    savannah();
+    savanna();
     noStroke();
     menuReturn();
     rightArrow();
