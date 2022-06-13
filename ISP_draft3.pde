@@ -177,7 +177,8 @@ void menu() {
 
 
   //buttons
-  if (mouseX > 50 && mouseX < 200 && mouseY >280 && mouseY < 355) {//the colour of the button changes if it inside the button depending on the x and y values of the coordinates
+  //the colour of the button changes if it inside the button depending on the x and y values of the coordinates
+  if (mouseX > 50 && mouseX < 200 && mouseY >280 && mouseY < 355) {
     fill(54, 240, 12);
   } else {
     fill(255);
@@ -188,7 +189,8 @@ void menu() {
   fill(0);
   text("Tropical\nForest", 120, 320);
 
-  if (mouseX > 50 && mouseX < 200 && mouseY >280 && mouseY < 355 && mousePressed)//the screen changes if it inside the button depending on the x and y values of the coordinates and the user clicks
+  //the screen changes if it inside the button depending on the x and y values of the coordinates and the user clicks
+  if (mouseX > 50 && mouseX < 200 && mouseY >280 && mouseY < 355 && mousePressed)
   {
     isInside1 =true;
     info=false;
@@ -363,7 +365,8 @@ void menuReturn() {
   fill(0);
   text("Menu", 760, 40);
 
-  if (mouseX > 720 && mouseX < 800 && mouseY > 0 && mouseY < 75 && mousePressed)//menu button returns back to the menu by making all the variables false
+  //menu button returns back to the menu by making all the variables false
+  if (mouseX > 720 && mouseX < 800 && mouseY > 0 && mouseY < 75 && mousePressed)
   {
     isInside1 = false;
     isInside2 = false;
@@ -402,14 +405,15 @@ void setup() {
 
 //void draw
 void draw() {
-  //println(frameRate);
-  if (isInside1) {//changes the screen from the menu to an ecosystem
+  //changes the screen from the menu to an ecosystem
+  if (isInside1) {
     tropForest();
     noStroke();
     menuReturn();
     rightArrow();
     noStroke();
-    if ( keyPressed && keyCode == RIGHT) {//if the right arrow is pressed the screen changes to the next ecosystem
+    //if the right arrow is pressed the screen changes to the next ecosystem
+    if ( keyPressed && keyCode == RIGHT) {
       delay(200);
       isInside1=false;
       isInside2=true;
@@ -428,7 +432,8 @@ void draw() {
       isInside3=true;
       info=false;
     }
-    if (keyCode == LEFT && keyPressed == true) {//if the left arrow is pressed the screen changes to the previous ecosystem
+    //if the left arrow is pressed the screen changes to the previous ecosystem
+    if (keyCode == LEFT && keyPressed == true) {
       delay(200);
       isInside2=false;
       isInside1=true;
