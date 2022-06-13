@@ -379,21 +379,19 @@ void menuReturn() {
 }
 
 void rightArrow() {
-  //drawing of right arrow
-  strokeWeight(3);
-  stroke(255, 255, 255);
-  line(700, 475, 770, 475);
-  line(750, 450, 770, 475);
-  line(750, 500, 770, 475);
+  rectMode(CENTER);
+  fill(255);
+  rect(730, 460, 60, 10);
+  rectMode(CORNER);
+  triangle(750, 445, 750, 475, 770, 460);
 }
 
 void leftArrow() {
-  //drawing of left arrow
-  strokeWeight(3);
-  stroke(255, 255, 255);
-  line(30, 475, 100, 475);
-  line(50, 450, 30, 475);
-  line(50, 500, 30, 475);
+  rectMode(CENTER);
+  fill(255);
+  rect(70, 460, 60, 10);
+  rectMode(CORNER);
+  triangle(50, 445, 50, 475, 30, 460);
 }
 
 //void setup
