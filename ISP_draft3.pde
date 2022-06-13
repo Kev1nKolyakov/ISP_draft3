@@ -146,8 +146,8 @@ void info() {
       textFont(big);
       text("Main Menu", 150, 120);
       textFont(small);
-      text("Each info button will show\ninformation about the ecosystem\n", 155, 170);
-      text("\n\n\nIn the ecosystems, use the \narrow keys to change the ecosystem", 155, 170);
+      text("Each info button will show\ninformation about the ecosystem. \n", 155, 170);
+      text("\n\n\nIn the ecosystems, use the \narrow keys to change the ecosystem. ", 155, 170);
     }
     textAlign(CENTER, CENTER);
   }
